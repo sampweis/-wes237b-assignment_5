@@ -1,4 +1,4 @@
-# -wes237b-assignment_5
+# wes237b-assignment_5
 
 Simple key-word search inference script to run on Jetson TX2
 
