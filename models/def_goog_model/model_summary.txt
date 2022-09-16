@@ -1,0 +1,37 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(1, 16000)]              0         
+                                                                 
+ speech_features (SpeechFeat  (1, 49, 20)              0         
+ ures)                                                           
+                                                                 
+ dense (Dense)               (1, 49, 64)               1344      
+                                                                 
+ dense_1 (Dense)             (1, 49, 128)              8320      
+                                                                 
+ stream (Stream)             (1, 6272)                 0         
+                                                                 
+ tf_op_layer_ExpandDims (Ten  [(1, 6272, 1)]           0         
+ sorFlowOpLayer)                                                 
+                                                                 
+ max_pooling1d (MaxPooling1D  (1, 3136, 1)             0         
+ )                                                               
+                                                                 
+ tf_op_layer_Squeeze (Tensor  [(1, 3136)]              0         
+ FlowOpLayer)                                                    
+                                                                 
+ dropout (Dropout)           (1, 3136)                 0         
+                                                                 
+ dense_2 (Dense)             (1, 128)                  401536    
+                                                                 
+ dense_3 (Dense)             (1, 256)                  33024     
+                                                                 
+ dense_4 (Dense)             (1, 12)                   3084      
+                                                                 
+=================================================================
+Total params: 447,308
+Trainable params: 447,308
+Non-trainable params: 0
+_________________________________________________________________
