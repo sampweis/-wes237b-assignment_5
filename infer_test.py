@@ -73,7 +73,7 @@ def test_label(infer, label_name, verbose):
     
 
 parser = ArgumentParser()
-parser.add_argument('--model', type=str, default="quick_trained_model")
+parser.add_argument('--model', type=str, default="dnn_436")
 parser.add_argument('--test_set', type=str, default="small_test_set")
 parser.add_argument('--label', type=str, default="all")
 parser.add_argument('--verbose', type=bool, default=False)
