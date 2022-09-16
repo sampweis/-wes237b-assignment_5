@@ -32,10 +32,10 @@ def load_wav_file(filename):
         feed_dict={wav_filename_placeholder: filename}).audio.flatten()
 
 def win_label(tensor):
-	try:
-		arr = tensor['dense_4'].numpy()
-	except:
-		arr = tensor['dense_3'].numpy()
+    try:
+        arr = tensor['dense_4'].numpy()
+    except:
+        arr = tensor['dense_3'].numpy()
     winner = arr.argmax()
     return labels[winner]
 
